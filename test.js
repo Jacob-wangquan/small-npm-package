@@ -45,7 +45,7 @@ var filledArray = require('filled-array');
 var mapObject = require('map-obj');
 //console.log(mapObject({foo: 'bar'}, (key, value) => [value, key]));
 
-//Map object keys and values into an array
+//12, Map object keys and values into an array
 var mapArray = require('map-array');
 var obj = {
   giorgio: 'bianchi',
@@ -54,10 +54,18 @@ var obj = {
 // console.log(mapArray(obj, function(key, value){
 //   return key + '-' + value;
 // }));
-//判断元素是否在数组中
+//13, 判断元素是否在数组中
 var inArray = require('in-array');
 //console.log(inArray(['a', 'b', 'c'], 'b'));
 
-//不使用splice，从一个无序数组中快速移除一个元素
+//14, 不使用splice，从一个无序数组中快速移除一个元素
 var remove = require('unordered-array-remove');
-console.log(remove(['a', 'b', 'c'], 2));
+//console.log(remove(['a', 'b', 'c'], 2));
+
+//15, 交换数组中二个元素的位置，不会改变之前数组的状态
+var swapArray = require('swap-array');
+//console.log(swapArray(['thats','cool','dude'], 1, 2));
+
+//16,creating a keymirror object from an array of keys.
+var mirrarray = require('mirrarray');
+console.log(mirrarray(['this', 'is', 'array']));
